@@ -3,7 +3,7 @@
 ## 環境の作成
 
 ```console
-curl -sSfLO https://raw.githubusercontent.com/GenerativeAgents/training-claude-code-starter/refs/heads/main/docs/ec2_code_server.yaml
+curl -sSfLO https://raw.githubusercontent.com/GenerativeAgents/training-claude-code/refs/heads/main/docs/ec2_code_server.yaml
 
 for i in {01..05}; do
   aws cloudformation create-stack \

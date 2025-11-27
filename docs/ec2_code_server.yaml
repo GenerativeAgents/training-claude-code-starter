@@ -414,7 +414,7 @@ Resources:
           sudo chown -R ubuntu:ubuntu /home/ubuntu
 
           # Setup environment
-          curl -L https://raw.githubusercontent.com/GenerativeAgents/training-claude-code-starter/refs/heads/main/docs/setup.sh | sudo -u ubuntu bash
+          curl -L https://raw.githubusercontent.com/GenerativeAgents/training-claude-code/refs/heads/main/docs/setup.sh | sudo -u ubuntu bash
 
   ########### CloudFront Resources ###########
   Distribution:
