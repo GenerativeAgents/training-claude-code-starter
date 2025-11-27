@@ -10,12 +10,8 @@ if [ "$(whoami)" != "ubuntu" ]; then
   exit 1
 fi
 
-# ソースコードのダウンロード
-cd /home/ubuntu/environment
-if [ ! -d "training-claude-code-starter" ]; then
-  git clone https://github.com/GenerativeAgents/training-claude-code-starter.git
-fi
-cd training-claude-code-starter
+# Claude Codeのインストール
+curl -fsSL https://claude.ai/install.sh | bash
 
 # GitHub CLIのインストール
 (type -p wget >/dev/null || (sudo apt update && sudo apt install wget -y)) \
